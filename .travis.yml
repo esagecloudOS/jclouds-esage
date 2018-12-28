@@ -1,0 +1,19 @@
+language: java
+jdk:
+    - openjdk6
+    - openjdk7
+    - oraclejdk7
+branches:
+    only:
+        - master
+notifications:
+    email:
+        recipients:
+            - developers@abiquo.com
+        on_success: change
+        on_failure: always
+    irc:
+        channels:
+            - "irc.freenode.net#abiquo"
+        on_success: change
+        on_failure: always
